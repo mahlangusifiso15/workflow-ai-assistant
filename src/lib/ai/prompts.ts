@@ -69,7 +69,7 @@ OUTPUT JSON SHAPE:
 ${GLOBAL_CONSTRAINTS}`;
 
 export type PlannerInput = {
-  tasks: { name: string; deadline?: string; notes?: string }[];
+  tasks: { name: string; deadline?: string | undefined; notes?: string | undefined }[];
   horizon: "Daily" | "Weekly";
 };
 
